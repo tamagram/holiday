@@ -7,6 +7,7 @@ type CalendarTableProps = {
 
 const tableCellLength = 42;
 const days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+const today = new Date();
 
 
 const CalendarTable: React.FC<CalendarTableProps> = ({ year, month }) => {
@@ -26,7 +27,10 @@ const CalendarTable: React.FC<CalendarTableProps> = ({ year, month }) => {
       const tr = (
         <tr key={i}>
           {daysInMonth.slice(i * 7, (i + 1) * 7).map((day, j) => {
-            return <td className={styles.CalendarTable__td} key={j}>{day}</td>
+            if (day === today.getDate().toString() && month === today.getMonth() + 1 && year === today.getFullYear()) return <td className={styles.CalendarTable__td__Today} key={j}>{day}</td>
+            else if (j === 0) return <td className={styles.CalendarTable__td__Sunday} key={j}>{day}</td>
+            else if (j === 6) return <td className={styles.CalendarTable__td__Saturday} key={j}>{day}</td>
+            else return <td className={styles.CalendarTable__td} key={j}>{day}</td>
           })}
         </tr>
       )

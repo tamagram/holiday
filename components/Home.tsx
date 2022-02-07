@@ -6,7 +6,7 @@ import styles from "./Home.module.scss"
 
 const Home: React.FC = () => {
   const [year, setYear] = useState(new Date().getFullYear())
-  const [month, setMonth] = useState(new Date().getMonth())
+  const [month, setMonth] = useState(new Date().getMonth() + 1)
 
   const prevMonth = () => {
     if (month === 1) {

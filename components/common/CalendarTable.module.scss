@@ -3,5 +3,23 @@
   &__th,
   &__td {
     padding: 10px;
+    text-align: center;
+    &__Sunday {
+      color: red;
+      padding: 10px;
+      text-align: center;
+    }
+    &__Saturday {
+      color: blue;
+      padding: 10px;
+      text-align: center;
+    }
+    &__Today {
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      padding: 10px;
+      text-align: center;
+    }
   }
 }
