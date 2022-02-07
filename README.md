@@ -1,3 +1,8 @@
+![holiday](https://user-images.githubusercontent.com/66813233/152851877-41019dfb-3e9c-4cb8-a57c-02f7221e780a.gif)
+
+カレンダー作成の課題です。
+土曜は青、日曜は赤、祝日は緑で表示されます。
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
