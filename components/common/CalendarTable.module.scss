@@ -4,15 +4,24 @@
   &__td {
     padding: 10px;
     text-align: center;
+    font-weight: bold;
     &__Sunday {
       color: red;
       padding: 10px;
       text-align: center;
+      font-weight: bold;
     }
     &__Saturday {
       color: blue;
       padding: 10px;
       text-align: center;
+      font-weight: bold;
+    }
+    &__Holiday {
+      color: green;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
     }
     &__Today {
       color: white;
@@ -20,6 +29,7 @@
       border-radius: 4px;
       padding: 10px;
       text-align: center;
+      font-weight: bold;
     }
   }
 }
