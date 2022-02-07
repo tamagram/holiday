@@ -29,9 +29,9 @@ const CalendarTable: React.FC<CalendarTableProps> = ({ year, month }) => {
   const DaysTr = () => {
     const daysData = (): string[] => {
       const offset = new Date(year, month - 1, 1).getDay()
-      let tableInMonth = Array(offset).fill("null")
+      let tableInMonth = Array(offset).fill("")
       tableInMonth = tableInMonth.concat(Array.from(Array(days[month - 1]), (_, i) => ((i + 1).toString())))
-      tableInMonth = tableInMonth.concat(Array(tableCellLength - tableInMonth.length).fill("null"))
+      tableInMonth = tableInMonth.concat(Array(tableCellLength - tableInMonth.length).fill(""))
       return tableInMonth
     }
     const daysInMonth = daysData()
